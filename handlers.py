@@ -18,7 +18,9 @@ async def start(message: types.Message):
                                     "ячейкам хранения и контейнерах.")
         bot_database.add_user(message.from_user.id, message.from_user.username)
     else:
-        await bot.send_message(message.from_user.id, 'Привет!')
+        await bot.send_message(message.from_user.id,
+                               text="Привет. Это складской бот компании ЦСТК.\nЯ умею показывать остатки шин по "
+                                    "ячейкам хранения и контейнерах.")
 
 
 @router.message(F.text)
