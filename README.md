@@ -47,3 +47,5 @@ Follow these steps to set up and run the bot on your local machine:
     ```bash
     python run.py
     ``` 
+   
+### Bot link: [@BotCstkSkladbot](https://t.me/BotCstkSkladbot)
