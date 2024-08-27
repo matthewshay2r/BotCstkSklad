@@ -43,6 +43,7 @@ async def ans_message(message: types.Message):
 
         if not filtered_items:
             await message.reply("По вашему запросу ничего не найдено.")
+            await bot.delete_message(message.from_user.id, msg.message_id)
             return
 
         response = ""
@@ -55,7 +56,6 @@ async def ans_message(message: types.Message):
         max_length = 4096
         for i in range(0, len(response), max_length):
             await message.reply(response[i:i + max_length])
-        await bot.delete_message(message.from_user.id, msg.message_id)
     else:
         await message.reply("Произошла ошибка при получение данных.")
         await bot.delete_message(message.from_user.id, msg.message_id)
