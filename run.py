@@ -3,7 +3,6 @@ from aiogram import Dispatcher
 import asyncio
 from handlers import router, bot
 
-
 dp = Dispatcher()
 
 
