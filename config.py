@@ -1,1 +1,5 @@
-BOT_TOKEN="token"
+BOT_TOKEN = 'token'
+URL = 'url'
+HEADERS = {
+    'headers'
+}
